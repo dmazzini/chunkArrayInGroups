@@ -27,8 +27,8 @@ public class ChunkArrayInGroupsTest {
 
 	@Test
 	public void test03() {
-		List actual = new ChunkArrayInGroups().chunkArrayInGroups(Arrays.asList(0, 1, 2, 3, 4, 5), 2);
-		List expected = Arrays.asList(Arrays.asList(0, 1), Arrays.asList(2, 3), Arrays.asList(4, 5));
+		List actual = new ChunkArrayInGroups().chunkArrayInGroups(Arrays.asList(0, 1, 2, 3, 4, 5), 4);
+		List expected = Arrays.asList(Arrays.asList(0, 1, 2, 3), Arrays.asList(4, 5));
 		
 		assertEquals(expected, actual);
 	}
